@@ -3,5 +3,5 @@ Basic Algorithms implementation for interest.
 ## Editor
 vim
 ## List of algorithms
-### Binary Search
-
+- [x] Binary Search
+- [ ] Selection Sort
