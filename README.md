@@ -4,4 +4,5 @@ Basic Algorithms implementation for interest.
 vim
 ## List of algorithms
 - [x] Binary Search
-- [ ] Selection Sort
+- [x] Selection Sort
+- [ ] Recursive Algorithm

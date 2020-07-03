@@ -6,10 +6,13 @@ TARGET = algo
 
 # Algorithms
 BINARY_SEARCH_PATH = $(SRC_PATH)/BinarySearch
+SELECTION_SORT_PATH = $(SRC_PATH)/SelectionSort
 
-INCLUDE += -I$(BINARY_SEARCH_PATH)
+INCLUDE += -I$(BINARY_SEARCH_PATH) \
+		   -I$(SELECTION_SORT_PATH)
 
-LIBS = $(LIB_BINARY_SEARCH)
+LIBS = $(LIB_BINARY_SEARCH) \
+	   $(LIB_SELECTION_SORT)
 
 
 SRCS = $(SRC_PATH)/Main.cpp
@@ -25,9 +28,13 @@ $(OBJS) : $(SRCS)
 $(LIB_BINARY_SEARCH):
 	@cd $(BINARY_SEARCH_PATH) && make
 
+$(LIB_SELECTION_SORT):
+	@cd $(SELECTION_SORT_PATH) && make
+
 .PHONY : clean
 
 clean:
 	@cd $(BINARY_SEARCH_PATH) && make clean
+	@cd $(SELECTION_SORT_PATH) && make clean
 	$(RM) $(OBJS) $(TARGET)
 

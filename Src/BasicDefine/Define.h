@@ -21,6 +21,9 @@
 #define OKAY  0
 #define ERROR 1
 
+#define NOT !
+#define AND &&
+
 #define EXIT exit(1)
 
 #endif //ALGORITHMS_BASICDEFINE_DEFINE_H
