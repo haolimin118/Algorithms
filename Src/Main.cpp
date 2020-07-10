@@ -1,6 +1,7 @@
 #include <iostream>
 #include "BinarySearch/BinarySearch.h"
 #include "SelectionSort/SelectionSort.h"
+#include "Recursive/Fibonacci.h"
 
 using namespace std;
 
@@ -127,6 +128,30 @@ static void TestSelectionSort()
 }
 
 
+void TestFibonacci()
+{
+    Fibonacci f1(0);
+    long result = f1.GetFibN();
+    printf("Fib (%d) = %ld\n", 0, result);
+
+    Fibonacci f2(1);
+    result = f2.GetFibN();
+    printf("Fib (%d) = %ld\n", 1, result);
+
+    Fibonacci f3(2);
+    result = f3.GetFibN();
+    printf("Fib (%d) = %ld\n", 2, result);
+
+    Fibonacci f4(10);
+    result = f4.GetFibN();
+    printf("Fib (%d) = %ld\n", 10, result);
+
+    Fibonacci f5(50);
+    result = f5.GetFibN();
+    printf("Fib (%d) = %ld\n", 50, result);
+}
+
+
 int main()
 {
     printf("[Algorithms Project] -- Hao Limin\n");
@@ -134,7 +159,11 @@ int main()
     // printf("\n[BinarySearch]\n");
     // TestBinarySearch();
 
-    printf("\n[SelectionSort]\n");
-    TestSelectionSort();
+    // printf("\n[SelectionSort]\n");
+    // TestSelectionSort();
+
+    printf("\n[Recursive Fibonacci]\n");
+    TestFibonacci();
+
     return 0;
 }
