@@ -10,6 +10,7 @@ INCLUDE = -I$(SRC_PATH)
 # All Algorithms
 LIB_BINARY_SEARCH = $(LIB_PATH)/libbs.a
 LIB_SELECTION_SORT = $(LIB_PATH)/libss.a
+LIB_RECURSIVE = $(LIB_PATH)/librecursive.a
 
 
 CXX = clang++
